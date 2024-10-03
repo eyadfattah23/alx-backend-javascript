@@ -37,3 +37,43 @@ At the end of this project, expected to be able to explain to anyone, without th
 * code will be tested using the Jest Testing Framework
 * code will be analyzed using the linter ESLint along with specific rules that we’ll provide
 * All functions must be exported
+
+
+### imp. tasks:
+
+4. Rest parameter syntax for functions 
+
+Modify the following function to return the number of arguments passed to it using the rest parameter syntax
+
+```js
+export default function returnHowManyArguments() {
+
+}
+```
+
+Example:
+```shell
+> returnHowManyArguments("Hello", "Holberton", 2020);
+3
+```
+
+---
+
+5. The wonders of spread syntax 
+Using spread syntax, concatenate 2 arrays and each character of a string by modifying the function below. Your function body should be one line long.
+
+Execution:
+```sh
+bob@dylan:~$ cat 5-main.js
+import concatArrays from './5-spread-operator.js';
+
+console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello'));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 5-main.js 
+[
+  'a', 'b', 'c',
+  'd', 'H', 'e',
+  'l', 'l', 'o'
+]
+```
