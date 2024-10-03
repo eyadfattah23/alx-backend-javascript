@@ -10,6 +10,8 @@ Read or watch:
 * Await
 * Async
 * Throw / Try
+* [static promise methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve )
+* [all settled](https://youtu.be/OipVzp0R7zs?si=zBv31IOXZETESQTm)
 
 ## Learning Objectives
 
@@ -35,3 +37,22 @@ At the end of this project, expected to be able to explain to anyone, without th
 * code will be tested using the Jest Testing Framework
 * code will be analyzed using the linter ESLint along with specific rules that we’ll provide
 * All functions must be exported
+
+
+### imp tasks:
+
+6. Handle multiple promises
+mandatory
+
+Import `signUpUser` from `4-user-promise.js` and `uploadPhoto` from `5-photo-reject.js`.
+
+Write and export a function named ``handleProfileSignup``. It should accept three arguments `firstName` (string), `lastName` (string), and `fileName` (string). The function should call the two other functions. When the promises are all settled it should return an array with the following structure:
+```js
+[
+    {
+      status: status_of_the_promise,
+      value: value or error returned by the Promise
+    },
+    ...
+  ]
+```
