@@ -8,7 +8,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   ]).then((response) => {
     for (const promise of response) {
       if (promise.status === 'rejected') {
-        promise.value = promise.reason;
+        promise.value = promise.reason.toString();
         delete promise.reason;
       }
     }
