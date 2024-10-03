@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from '../node_modules/utils';
+import { uploadPhoto, createUser } from './utils';
 
 export default async function asyncUploadUser() {
   const obj = {};
