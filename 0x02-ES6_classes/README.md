@@ -8,6 +8,12 @@ Read or watch:
 
 * Classes
 * Metaprogramming
+* [array.every method](https://www.w3schools.com/jsref/jsref_every.asp)
+* [type of and isArray](https://www.w3schools.com/js/js_typeof.asp) 
+* [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
+* [How to get a JavaScript object's class](https://stackoverflow.com/questions/1249531/how-to-get-a-javascript-objects-class)
+* [getOwnPropertyNames](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)
+* https://www.w3schools.com/js/js_object_properties.asp
 
 ## Learning Objectives
 
@@ -20,10 +26,6 @@ At the end of this project, expected to be able to explain to anyone, without th
 * Why and how to add a static method to a class
 * How to extend a class from another
 * Metaprogramming and symbols
-* [array.every method](https://www.w3schools.com/jsref/jsref_every.asp)
-* [type of and isArray](https://www.w3schools.com/js/js_typeof.asp) 
-* [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
-* [How to get a JavaScript object's class](https://stackoverflow.com/questions/1249531/how-to-get-a-javascript-objects-class)
 
 
 

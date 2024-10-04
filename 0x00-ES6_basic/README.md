@@ -25,6 +25,7 @@ At the end of this project, expected to be able to explain to anyone, without th
 * String templating in ES6
 * Object creation and their properties in ES6
 * Iterators and for-of loops
+* [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 
 ### General

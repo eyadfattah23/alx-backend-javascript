@@ -5,7 +5,7 @@ export default class Building {
     }
     this._sqft = sqft;
 
-    if (!Object.getOwnPropertyNames(this).includes('evacuationWarningMessage') && this.constructor.name !== 'Building') {
+    if (typeof (this.evacuationWarningMessage) !== 'function' && this.constructor.name !== 'Building') {
       throw new Error('Class extending Building must override evacuationWarningMessage');
     }
   }
