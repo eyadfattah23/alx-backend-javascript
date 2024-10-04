@@ -15,6 +15,9 @@ Read or watch:
 * [getOwnPropertyNames](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)
 * https://www.w3schools.com/js/js_object_properties.asp
 
+* [How to change the way that String or Number cast a class in JavaScript?](https://stackoverflow.com/questions/71949115/how-to-change-the-way-that-string-or-number-cast-a-class-in-javascript)
+
+
 ## Learning Objectives
 
 At the end of this project, expected to be able to explain to anyone, without the help of Google:
