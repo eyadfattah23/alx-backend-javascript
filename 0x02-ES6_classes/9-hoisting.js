@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable max-classes-per-file */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
@@ -42,6 +40,6 @@ const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 
-export const listOfStudents = [student1, student2, student3, student4, student5];
-
+const listOfStudents = [student1, student2, student3, student4, student5];
+export default listOfStudents;
 /* console.log(listOfStudents); */
