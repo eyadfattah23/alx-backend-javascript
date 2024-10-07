@@ -10,7 +10,7 @@ Read or watch:
 * Set Data Structure
 * Map Data Structure
 * WeakMap
-
+* [Intro to Typed Arrays](https://www.youtube.com/watch?v=UYkJaW3pmj0)
 
 ## Learning Objectives
 
