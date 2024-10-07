@@ -3,5 +3,5 @@ export default function groceriesList() {
     .set('Tomatoes', 10)
     .set('Pasta', 1)
     .set('Rice', 1)
-    .set('Banana', 1);
+    .set('Banana', 5);
 }
