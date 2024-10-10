@@ -1,32 +1,31 @@
 interface Student {
-  firstName: string,
-  lastName: string,
-  age: number,
-  location: string,
-};
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
+}
 
 const student1: Student = {
   firstName: 'osama',
   lastName: 'string',
   age: 1000,
   location: 'eg',
-}
+};
 
 const student2: Student = {
   firstName: 'lucky',
   lastName: 'bool',
   age: 963,
   location: 'uk',
-}
+};
 
-const studentsList: Student[] = [student1, student2] 
-
+const studentsList: Student[] = [student1, student2];
 
 // Create a table element
 const table = document.createElement('table');
 
 // Iterate over the studentsList and append rows to the table
-studentsList.forEach(student => {
+studentsList.forEach((student) => {
   const row = document.createElement('tr'); // Create a table row
 
   // Create table cells for firstName and location
