@@ -145,3 +145,13 @@ module.exports = {
   }
 };
 ```
+
+
+### some important commands:
+1. `npm install -g typescript `
+2. `nvm use v12.11.3`
+3. `nvm ls`
+4. `npm install`
+5. `npx eslint --fix js/main.ts`
+6. `npx eslint js/main.ts`
+7. `tsc file.ts`
