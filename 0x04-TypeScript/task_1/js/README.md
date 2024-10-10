@@ -39,5 +39,6 @@ console.log(teacher3);
 
 notes:
 
-check command in the main readme in the parent dir 
-tsc -v, tsc file.ts, or any tsc file only runs with node version >= 14 
+* check command in the main readme in the parent dir 
+* tsc -v, tsc file.ts, or any tsc file only runs with node version >= 14 
+* [online playground](https://www.typescriptlang.org/play/?#code/JYOwLgpgTgZghgYwgAgCoUQC2sg3gKGWSgwBMB7EAGwE9kZgoBnMAOTgFsIAuZFqUAHMA3IWJlKtZFTgt2XXvyGiiMAK5UqqYFwCiHAA5VyNCD2QAjcuSoYQK5KbjMA8jF0APA9GAQQSAH5eEDUOC2gHYwQ4MGBKRTABEBExAG0DKHIDEE5zJWSAXV44EBpRAF98fFBIWEQUABFGCAQwcmZkCA9IEFImNAwEbCg8MRCw6DcAJQgDdrAmYNDwqAqqhEoWZEgsaABmXnRdkYBeUdVGOVzeAHIAKXJMEBuAGjF1TW09Q2NTc3gqEwIG8iDIrgpkDcGuQIK8xFEYnEQLcADKUCjPEHIDbgKCIMC8AFAt7lUT4HFMGwQAB0xkEAAodkN9gBKUQUsDIUjNVrtACMvCaJF5HTOBAuzDY10hDyecNBsilEKhMPl0nI0Vi8UhaN6lDVHy0Ogg+iMJjMvESamBY2WkxgMzmUAWvD5AHYSezNlTaeQGdzhW0oHy2fggA)
