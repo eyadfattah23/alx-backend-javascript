@@ -36,4 +36,8 @@ console.log(teacher3);
 * https://www.typescriptlang.org/docs/handbook/2/objects.html
 * https://www.typescriptlang.org/docs/handbook/interfaces.html
 
+
+notes:
+
 check command in the main readme in the parent dir 
+tsc -v, tsc file.ts, or any tsc file only runs with node version >= 14 
