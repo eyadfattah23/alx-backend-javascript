@@ -41,8 +41,8 @@ console.log(printTeacher(teacher3.firstName, director1.lastName));
 interface SClass {
   firstName: string;
   lastName: string;
-  workOnHomework: () => string;
-  displayName: () => string;
+  workOnHomework(): string;
+  displayName(): string;
 
 }
 class StudentClass implements SClass {
@@ -55,11 +55,13 @@ class StudentClass implements SClass {
       this.lastName = lastName;
     }
 
-    workOnHomework() {
-      return `Currently working`;
+    workOnHomework(): string {
+      return 'Currently working';
     }
 
-    displayName() {
+    displayName(): string {
       return `${this.firstName}`;
     }
 }
+
+console.log(new StudentClass('eddy', 'gamed'));

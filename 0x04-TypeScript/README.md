@@ -155,3 +155,4 @@ module.exports = {
 5. `npx eslint --fix js/main.ts`
 6. `npx eslint js/main.ts`
 7. `tsc file.ts`
+8. nvm alias default v20.18

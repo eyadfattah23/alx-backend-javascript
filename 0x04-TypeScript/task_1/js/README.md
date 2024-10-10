@@ -1,11 +1,26 @@
 ## task:
 Create a directory task_1 and copy these configuration files into this folder: package.json, tsconfig.json, webpack.config.js
 
-    firstName(string) and lastName(string). These two attributes should only be modifiable when a Teacher is first initialized
-    fullTimeEmployee(boolean) this attribute should always be defined
-    yearsOfExperience(number) this attribute is optional
-    location(string) this attribute should always be defined
-    Add the possibility to add any attribute to the Object like contract(boolean) without specifying the name of the attribute
+* firstName(string) and lastName(string). These two attributes should only be modifiable when a Teacher is first initialized
+* fullTimeEmployee(boolean) this attribute should always be defined
+* yearsOfExperience(number) this attribute is optional
+* location(string) this attribute should always be defined
+* Add the possibility to add any attribute to the Object like contract(boolean) without specifying the name of the attribute
+
+
+Write a Class named StudentClass:
+
+* The constructor accepts firstName(string) and lastName(string) arguments
+* The class has a method named workOnHomework that return the string Currently working
+* The class has a method named displayName. It returns the firstName of the student
+* The constructor of the class should be described through an Interface
+* The class should be described through an Interface
+
+Requirements:
+
+* You can reuse the Webpack configuration from the previous exercise to compile the code.
+* When running npm run build, no TypeScript error should be displayed.
+* Every variable should use TypeScript when possible.
 
 Example:
 
@@ -36,7 +51,7 @@ console.log(teacher3);
 * https://www.typescriptlang.org/docs/handbook/2/objects.html
 * https://www.typescriptlang.org/docs/handbook/interfaces.html
 * [function interface](https://stackoverflow.com/questions/14813804/typescript-function-interface)
-
+* https://www.codecademy.com/learn/learn-typescript/modules/learn-typescript-advanced-object-types/cheatsheet
 notes:
 
 * check command in the main readme in the parent dir 
