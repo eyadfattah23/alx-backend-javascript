@@ -35,7 +35,7 @@ console.log(teacher3);
 * https://www.youtube.com/watch?v=U405xMeS4lM&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=6
 * https://www.typescriptlang.org/docs/handbook/2/objects.html
 * https://www.typescriptlang.org/docs/handbook/interfaces.html
-
+* [function interface](https://stackoverflow.com/questions/14813804/typescript-function-interface)
 
 notes:
 

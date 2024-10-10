@@ -29,12 +29,37 @@ const director1: Directors = {
 };
 console.log(director1);
 
-
-interface printTeacherFunction {
-  (firstName: string, lastName: string):string;
+interface PrintTeacherFunction {
+  (firstName: string, lastName: string): string;
 }
-const printTeacher: printTeacherFunction = function (firstName, lastName){
-  return `${firstName[0]}. ${lastName}`
-}
+const printTeacher: PrintTeacherFunction = function (firstName, lastName) {
+  return `${firstName[0]}. ${lastName}`;
+};
 
 console.log(printTeacher(teacher3.firstName, director1.lastName));
+
+interface SClass {
+  firstName: string;
+  lastName: string;
+  workOnHomework: () => string;
+  displayName: () => string;
+
+}
+class StudentClass implements SClass {
+    firstName: string;
+
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+
+    workOnHomework() {
+      return `Currently working`;
+    }
+
+    displayName() {
+      return `${this.firstName}`;
+    }
+}
