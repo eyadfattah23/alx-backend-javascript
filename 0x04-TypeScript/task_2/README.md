@@ -47,3 +47,4 @@ console.log(createEmployee('$500'));
 
 resources:
 * [literals](https://www.youtube.com/watch?v=BmmTQZsKXyw&list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&index=14)
+* https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html
