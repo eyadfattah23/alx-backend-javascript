@@ -1,15 +1,11 @@
 const fs = require('fs');
 
 function countStudents(path) {
-  if (!fs.existsSync(path)) {
-    throw Error('Cannot load the database');
-  }
-
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (error, data) => {
       if (error) {
-        reject(error);
-        throw Error('Cannot load the database');
+        reject(Error('Cannot load the database'));
+        return;
       }
       const students = data.split('\n').slice(1);
       if (!students[-1]) { students.pop(); }
@@ -26,7 +22,6 @@ function countStudents(path) {
       console.log(`Number of students in CS: ${csStudents.length}. List: ${csStudents.join(', ')}`);
       console.log(`Number of students in SWE: ${SWEStudents.length}. List: ${SWEStudents.join(', ')}`);
       resolve();
-      return null;
     });
   });
 }
