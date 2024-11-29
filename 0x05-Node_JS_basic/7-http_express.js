@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.get('/students', (req, res) => {
   countStudents(database).then((resolved) => {
     res.status(200).send(`This is the list of our students\n${resolved.total}\n${resolved.CS}\n${resolved.SWE}`);
-  }).catch((err) => { res.send(err.message); });
+  }).catch((err) => { res.send(`This is the list of our students\n${err.message}`); });
 });
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
