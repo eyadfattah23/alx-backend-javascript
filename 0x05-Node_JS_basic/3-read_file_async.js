@@ -1,28 +1,42 @@
-const fs = require('fs');
-
+const fs = require("fs");
 function countStudents(path) {
+
   return new Promise((resolve, reject) => {
-    fs.readFile(path, 'utf8', (error, data) => {
+    fs.readFile(path, 'utf-8', (error, data) => {
       if (error) {
-        reject(Error('Cannot load the database'));
-        return;
+        if (error.errno === -2)
+          reject(new Error('Cannot load the database'));
+        else
+          reject(new Error(error.message));
       }
-      const students = data.split('\n').slice(1);
-      if (!students[-1]) { students.pop(); }
+      let fileContent = data.split('\n');
+      const CSList = [];
+      const SWEList = [];
 
-      console.log(`Number of students: ${students.length}`);
-      const csStudents = [];
-      const SWEStudents = [];
-
-      for (const student of students) {
-        const std = student.split(',');
-        if (std[3] === 'CS') { csStudents.push(std[0]); }
-        if (std[3] === 'SWE') { SWEStudents.push(std[0]); }
+      if (!fileContent[fileContent.length - 1]) {
+        fileContent = fileContent.slice(1, -1);
+        console.log(`Number of students: ${fileContent.length}`);
+      } else {
+        fileContent = fileContent.slice(2);
       }
-      console.log(`Number of students in CS: ${csStudents.length}. List: ${csStudents.join(', ')}`);
-      console.log(`Number of students in SWE: ${SWEStudents.length}. List: ${SWEStudents.join(', ')}`);
+      for (let i = 0; i < fileContent.length; i++) {
+        const student = fileContent[i].split(',');
+        if (student[3] === 'CS') {
+          CSList.push(student[0])
+        } else
+          SWEList.push(student[0])
+
+      }
+      console.log(`Number of students in CS: ${CSList.join(', ')}`);
+      console.log(`Number of students in SWE: ${SWEList.join(', ')}`);
       resolve();
-    });
-  });
+    })
+  })
 }
-module.exports = countStudents;
+countStudents("database.csv").then(() => {
+  console.log("Done!");
+})
+  .catch((error) => {
+    console.log(error);
+  });
+console.log("After!");
