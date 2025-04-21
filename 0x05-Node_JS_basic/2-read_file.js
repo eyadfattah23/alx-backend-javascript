@@ -15,10 +15,8 @@ function countStudents(path) {
       const student = fileContent[i].split(',');
       if (student[3] === 'CS') {
         CSList.push(student[0])
-      } else[
-
+      } else
         SWEList.push(student[0])
-      ]
 
     }
     console.log(`Number of students in CS: ${CSList.join(', ')}`);
