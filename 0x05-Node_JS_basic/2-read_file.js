@@ -1,27 +1,35 @@
-const fs = require('fs');
-
+const fs = require("fs");
 function countStudents(path) {
-  if (!fs.existsSync(path)) {
-    throw Error('Cannot load the database');
+  try {
+    let fileContent = fs.readFileSync(path, "utf-8").split('\n');
+    const CSList = [];
+    const SWEList = [];
+
+    if (!fileContent[fileContent.length - 1]) {
+      fileContent = fileContent.slice(1, -1);
+      console.log(`Number of students:${fileContent.length}`);
+    } else {
+      fileContent = fileContent.slice(2);
+    }
+    for (let i = 0; i < fileContent.length; i++) {
+      const student = fileContent[i].split(',');
+      if (student[3] === 'CS') {
+        CSList.push(student[0])
+      } else[
+
+        SWEList.push(student[0])
+      ]
+
+    }
+    console.log(`Number of students in CS: ${CSList.join(', ')}`);
+    console.log(`Number of students in SWE: ${SWEList.join(', ')}`);
+
+
+  } catch (error) {
+    if (error.errno === -2)
+      throw new Error('Cannot load the database')
+    else
+      throw new Error(error.message)
   }
-
-  const file = fs.readFileSync(path, 'utf-8');
-
-  const students = file.split('\n').slice(1);
-  if (!students[-1]) { students.pop(); }
-
-  console.log(`Number of students: ${students.length}`);
-
-  const csStudents = [];
-  const SWEStudents = [];
-
-  for (const student of students) {
-    const std = student.split(',');
-    if (std[3] === 'CS') { csStudents.push(std[0]); }
-    if (std[3] === 'SWE') { SWEStudents.push(std[0]); }
-  }
-  console.log(`Number of students in CS: ${csStudents.length}. List: ${csStudents.join(', ')}`);
-  console.log(`Number of students in SWE: ${SWEStudents.length}. List: ${SWEStudents.join(', ')}`);
 }
-
-module.exports = countStudents;
+countStudents("database.csv")
